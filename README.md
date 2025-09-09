@@ -37,8 +37,23 @@ This study implements and analyzes the following architectural patterns:
 
 The notebook is structured into a clear, multi-part pipeline:
 
-*   **Part 1 - Environment Setup:** Handles all package installations and configuration. Includes optional integration with Google Drive to persist models and data between sessions.
-*   **Part 2 - Data Intake & Preprocessing:** Automatically scans for input audio files, normalizes them, and resamples to 16 kHz mono to meet model requirements.
+*   **Part 1 - Environment Setup:** Handles all package installations and configuration. Includes optional integration with Google Drive to persist models and data between sessions and **automatically creates the required project folders.**
+*   **Part 2 - Data Intake & Preprocessing:** Automatically scans for input audio files, normalizes them, and resamples to 16 kHz mono to meet model requirements. **Sample audio files are included** to allow for immediate execution.
 *   **Parts 3, 4, 5 - Pipeline Execution:** Contains the implementation for each of the three approaches described above.
 *   **Part 6 - Evaluation & Comparison:**
-    *   **Objective Metrics:** Calculates and compares the pipelines on end-to-end latency, Word Error Rate (WER), and BLEU scores for 
+    *   **Objective Metrics:** Calculates and compares the pipelines on end-to-end latency, Word Error Rate (WER), and BLEU scores for translation quality.
+    *   **Subjective Assessment:** Includes an interactive audio gallery with embedded players, allowing for a direct, side-by-side qualitative comparison of the output from each pipeline.
+
+---
+
+## How to Run This Project
+
+This project is designed to be run entirely within the Google Colab environment and includes sample audio to get started immediately.
+
+1.  **Open the Notebook:** Click the **"Open in Colab"** badge at the top of this README.
+
+2.  **Connect to Google Drive:** Run the cells in **Part 1 (Setup)**. You will be prompted to connect and authorize access to your Google Drive. The script will automatically create the necessary project folders (e.g., `/content/drive/MyDrive/speech_ai_colab/`).
+
+3.  **(Optional) Upload Your Own Audio:** The project includes sample audio files. If you wish to test your own audio, simply upload your `.wav` or `.mp3` files to the `/inputs/` folder that was created in your Google Drive.
+
+4.  **Run the Entire Notebook:** From the top menu, select **`Runtime -> Run all`**. The notebook will execute sequentially, processing the audio through all three pipelines and generating the final comparison and evaluation at the end.
