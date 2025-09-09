@@ -1,6 +1,6 @@
 # A Comparative Study of Speech-to-Speech Translation Architectures
 
-[![Open In Colab]([https://colab.research.google.com/assets/colab-badge.svg)](YOUR_SHAREABLE_COLAB_LINK_HERE](https://colab.research.google.com/drive/1c8dT49CVwtNWG-yWGsKG5oorVwsYyZQm?usp=sharing))
+[![Open In Colab](https://colab.research.google.com/drive/1c8dT49CVwtNWG-yWGsKG5oorVwsYyZQm?usp=sharing)]
 
 **This project is an interactive Google Colab notebook. Please click the badge above to open and run the live environment.**
 
